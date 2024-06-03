@@ -1,64 +1,108 @@
-body{
-    background-color:#DAA520;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
-.pizza{
-    /*box-model */
-    border: 1px solid #C04000;
-    padding: 1em;
-    margin: 1em;
-    /*margin-left: 0,5em; */
-    margin-bottom: 0,5em;
-    border-radius: 1em;
-
-    inline-block
-
-    /*width: 20em;
-    display: inline-block;
-    min-height: 30em */
-
-
-
-
-
-
-.medium_pizza {
-    background-color: #FF5800;
-    flex:2
+header {
+    background-color: #28a745;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-.large_pizza {
-    background-color:#FFA000;
-    flex:2
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
-.small_pizza {
-    background-color: #F4C430;
-    flex:1
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
 }
 
-.contact_us{
-    background-color: #BA160C;
-
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media(min-width:768px){
-    /*body{
-        background-color:grey;
-}*/
-
+.pizza-sizes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
-@media(min-width:960px){
-    /*body{
-        background-color:grey;
-}*/
-
+.pizza-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    text-align: center;
 }
 
-.pizza{
-    display:flex
- }
+.pizza-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.pizza-box h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.pizza-box p {
+    font-size: 1em;
+    margin: 10px 0 0;
+}
+
+.pizza-box.small {
+    background-color: #ffcccb;
+}
+
+.pizza-box.medium {
+    background-color: #ffc107;
+}
+
+.pizza-box.large {
+    background-color: #28a745;
+    color: #fff;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+@media (max-width: 960px) {
+    .pizza-sizes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pizza-box {
+        flex: 1 1 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pizza-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
