@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #9bafd9;
     margin: 0;
     padding: 0;
 }
@@ -73,7 +73,7 @@ main {
 
 .pizza-box.large {
     background-color: #28a745;
-    color: #fff;
+    color: #4f4646;
 }
 
 footer {
