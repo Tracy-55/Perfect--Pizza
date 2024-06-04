@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #28a745;
-    color: #fff;
+    color: #4f4646;
     padding: 20px;
     text-align: center;
 }
@@ -105,4 +105,4 @@ footer {
         flex: 1 1 100%;
         max-width: 100%;
     }
-}
+}    
